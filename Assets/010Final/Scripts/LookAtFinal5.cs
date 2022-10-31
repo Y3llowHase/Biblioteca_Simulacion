@@ -19,7 +19,7 @@ public class LookAtFinal5 : MonoBehaviour
         Vector3 mousePosition = GetWorldMousePosition();
 
         float angle = Mathf.Atan2(mousePosition.y, mousePosition.x) - Mathf.PI / 2f;
-        RotateZ(angle);
+        //RotateZ(angle);
         Debug.Log(angle);
 
         //Frente
@@ -139,11 +139,11 @@ public class LookAtFinal5 : MonoBehaviour
         return worldPos;
     }
 
-    private void RotateZ(float radians)
-    {
-        transform.rotation = Quaternion.Euler(0.0f, 0.0f, radians * Mathf.Rad2Deg);
+    //private void RotateZ(float radians)
+    //{
+      //  transform.rotation = Quaternion.Euler(0.0f, 0.0f, radians * Mathf.Rad2Deg);
         //Debug.Log(transform.rotation);
-    }
+    //}
 
     private void ImageChange(float radians)
     {
