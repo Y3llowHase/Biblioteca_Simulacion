@@ -360,7 +360,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300018, guid: 3bc0f8978d0114d568eb440fca26e64b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 08ace1e627a0b7d4a8caae64b714d1e7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -398,12 +398,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa10900de9a27704384da7ef99d51df3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Frente: {fileID: 21300018, guid: 3bc0f8978d0114d568eb440fca26e64b, type: 3}
-  Arriba_izquierda: {fileID: 21300000, guid: 7d8cda48c729c46329cd9d3c69a3a4e6, type: 3}
-  Izquierda: {fileID: 21300010, guid: 2a23c00cde465461fb598526b91deedc, type: 3}
-  Abajo_izquierda: {fileID: 21300008, guid: 2a23c00cde465461fb598526b91deedc, type: 3}
-  Abajo: {fileID: 21300002, guid: 2a23c00cde465461fb598526b91deedc, type: 3}
-  Abajo_derecha: {fileID: 21300000, guid: 4f39beab6f36e4012aa0112a3a02828d, type: 3}
-  Derecha: {fileID: 21300000, guid: 9f145c794d2be4ed98c48eefdf471e02, type: 3}
-  Arriba_derecha: {fileID: 21300000, guid: 8c2b3b75a86844168b54c83f67a5fe8e, type: 3}
+  Frente: {fileID: 21300000, guid: 9218f7a9d07263445a37d957a4b50b85, type: 3}
+  Arriba_izquierda: {fileID: 21300000, guid: b381246cc3580c04fb04d4ebdd5efcc5, type: 3}
+  Izquierda: {fileID: 21300000, guid: 8de6cb662bd088d42b301c47a04b6145, type: 3}
+  Abajo_izquierda: {fileID: 21300000, guid: 1363770be763d9e4e98743013e75fca2, type: 3}
+  Abajo: {fileID: 21300000, guid: fe4627e7e10f53d45826edce54a1801d, type: 3}
+  Abajo_derecha: {fileID: 21300000, guid: 7bc1b56c24a9f2c4ca625aca1e9bae26, type: 3}
+  Derecha: {fileID: 21300000, guid: 767ff7cf648e1ae46869efb4b2b1a867, type: 3}
+  Arriba_derecha: {fileID: 21300000, guid: a5f4085fd975a7d419acdd94aa70d4c2, type: 3}
   Colors: 0
