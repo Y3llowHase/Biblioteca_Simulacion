@@ -133,7 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 92559438}
   - component: {fileID: 92559437}
-  - component: {fileID: 92559436}
+  - component: {fileID: 92559439}
   m_Layer: 0
   m_Name: Prueba (2)
   m_TagString: Untagged
@@ -141,27 +141,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &92559436
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 92559435}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa10900de9a27704384da7ef99d51df3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Frente: {fileID: 21300000, guid: d0a74eb7351d3054c844a814b0ce6564, type: 3}
-  Arriba_izquierda: {fileID: 21300000, guid: 38254ea1307e00a41942e7b8f9ed7b67, type: 3}
-  Izquierda: {fileID: 21300000, guid: 1d1f2d7fc5fb1bd4599f47d44945e27c, type: 3}
-  Abajo_izquierda: {fileID: 21300000, guid: c39f93c9671adaa4382d2e4c530b2326, type: 3}
-  Abajo: {fileID: 21300000, guid: fb82e42bac026a34fb56e32710d1b924, type: 3}
-  Abajo_derecha: {fileID: 21300000, guid: 019523eecc1f06d428603a4c9e360ffb, type: 3}
-  Derecha: {fileID: 21300000, guid: d05f757747819ff499e94bf4ced4dee1, type: 3}
-  Arriba_derecha: {fileID: 21300000, guid: a4579ffdacbbda745aeaa7f20d69f67e, type: 3}
-  Colors: 0
 --- !u!212 &92559437
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -229,6 +208,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &92559439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 92559435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 257d6abf54ca75d4bbb9dc040a772503, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Frente: {fileID: 21300000, guid: 677c932ca50973c4aa6bfd467b60b45f, type: 3}
+  Arriba_izquierda: {fileID: 21300000, guid: 38254ea1307e00a41942e7b8f9ed7b67, type: 3}
+  Izquierda: {fileID: 21300000, guid: 1d1f2d7fc5fb1bd4599f47d44945e27c, type: 3}
+  Abajo_izquierda: {fileID: 21300000, guid: c39f93c9671adaa4382d2e4c530b2326, type: 3}
+  Abajo: {fileID: 21300000, guid: fb82e42bac026a34fb56e32710d1b924, type: 3}
+  Abajo_derecha: {fileID: 21300000, guid: 019523eecc1f06d428603a4c9e360ffb, type: 3}
+  Derecha: {fileID: 21300000, guid: d05f757747819ff499e94bf4ced4dee1, type: 3}
+  Arriba_derecha: {fileID: 21300000, guid: a4579ffdacbbda745aeaa7f20d69f67e, type: 3}
+  Colors: 0
 --- !u!1 &249402340
 GameObject:
   m_ObjectHideFlags: 0
@@ -239,7 +239,7 @@ GameObject:
   m_Component:
   - component: {fileID: 249402343}
   - component: {fileID: 249402342}
-  - component: {fileID: 249402341}
+  - component: {fileID: 249402344}
   m_Layer: 0
   m_Name: Prueba (1)
   m_TagString: Untagged
@@ -247,27 +247,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &249402341
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 249402340}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa10900de9a27704384da7ef99d51df3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Frente: {fileID: 21300000, guid: a3cb86c4bceb5ff42990d7db3155f40d, type: 3}
-  Arriba_izquierda: {fileID: 21300000, guid: f88c39bc4ffe51642a3eea6ec95ede90, type: 3}
-  Izquierda: {fileID: 21300000, guid: 1ea9d3090c558fe4887a1de01633d55c, type: 3}
-  Abajo_izquierda: {fileID: 21300000, guid: 4a86bb99c07718f41846a6ebac4792cc, type: 3}
-  Abajo: {fileID: 21300000, guid: 7affd7f85e3bcf642976658ef0fca475, type: 3}
-  Abajo_derecha: {fileID: 21300000, guid: 27df8e3477f382240a42b80c8a2257c8, type: 3}
-  Derecha: {fileID: 21300000, guid: 6225b60312c1c80489d539b11012158a, type: 3}
-  Arriba_derecha: {fileID: 21300000, guid: 5bfae97d117cd7845902505879b7ae95, type: 3}
-  Colors: 0
 --- !u!212 &249402342
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -335,6 +314,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &249402344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249402340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75fd57ee7f7db0d43a6a826986411bc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Frente: {fileID: 21300000, guid: a3cb86c4bceb5ff42990d7db3155f40d, type: 3}
+  Arriba_izquierda: {fileID: 21300000, guid: f88c39bc4ffe51642a3eea6ec95ede90, type: 3}
+  Izquierda: {fileID: 21300000, guid: 1ea9d3090c558fe4887a1de01633d55c, type: 3}
+  Abajo_izquierda: {fileID: 21300000, guid: 4a86bb99c07718f41846a6ebac4792cc, type: 3}
+  Abajo: {fileID: 21300000, guid: 7affd7f85e3bcf642976658ef0fca475, type: 3}
+  Abajo_derecha: {fileID: 21300000, guid: 27df8e3477f382240a42b80c8a2257c8, type: 3}
+  Derecha: {fileID: 21300000, guid: 6225b60312c1c80489d539b11012158a, type: 3}
+  Arriba_derecha: {fileID: 21300000, guid: 5bfae97d117cd7845902505879b7ae95, type: 3}
+  Colors: 0
 --- !u!1 &656335559
 GameObject:
   m_ObjectHideFlags: 0
@@ -629,7 +629,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2055862023}
   - component: {fileID: 2055862021}
-  - component: {fileID: 2055862024}
+  - component: {fileID: 2055862025}
   m_Layer: 0
   m_Name: Prueba
   m_TagString: Untagged
@@ -704,7 +704,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2055862024
+--- !u!114 &2055862025
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -713,7 +713,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2055862020}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa10900de9a27704384da7ef99d51df3, type: 3}
+  m_Script: {fileID: 11500000, guid: ae37eb4ed4e25984db9a734d86162846, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Frente: {fileID: 21300000, guid: ff8c2822e61cfac49ae3d3d19e513e53, type: 3}
