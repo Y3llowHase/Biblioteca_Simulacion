@@ -220,7 +220,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 257d6abf54ca75d4bbb9dc040a772503, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Imagen: {fileID: 0}
   Frente: {fileID: 21300000, guid: 677c932ca50973c4aa6bfd467b60b45f, type: 3}
+  Arriba: {fileID: 21300000, guid: d0a74eb7351d3054c844a814b0ce6564, type: 3}
   Arriba_izquierda: {fileID: 21300000, guid: 38254ea1307e00a41942e7b8f9ed7b67, type: 3}
   Izquierda: {fileID: 21300000, guid: 1d1f2d7fc5fb1bd4599f47d44945e27c, type: 3}
   Abajo_izquierda: {fileID: 21300000, guid: c39f93c9671adaa4382d2e4c530b2326, type: 3}
@@ -228,7 +230,6 @@ MonoBehaviour:
   Abajo_derecha: {fileID: 21300000, guid: 019523eecc1f06d428603a4c9e360ffb, type: 3}
   Derecha: {fileID: 21300000, guid: d05f757747819ff499e94bf4ced4dee1, type: 3}
   Arriba_derecha: {fileID: 21300000, guid: a4579ffdacbbda745aeaa7f20d69f67e, type: 3}
-  Colors: 0
 --- !u!1 &249402340
 GameObject:
   m_ObjectHideFlags: 0
@@ -326,7 +327,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75fd57ee7f7db0d43a6a826986411bc2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Frente: {fileID: 21300000, guid: a3cb86c4bceb5ff42990d7db3155f40d, type: 3}
+  Frente: {fileID: 21300000, guid: e2fe7d0ede6c62b45a36a52011997e6c, type: 3}
+  Arriba: {fileID: 21300000, guid: a3cb86c4bceb5ff42990d7db3155f40d, type: 3}
   Arriba_izquierda: {fileID: 21300000, guid: f88c39bc4ffe51642a3eea6ec95ede90, type: 3}
   Izquierda: {fileID: 21300000, guid: 1ea9d3090c558fe4887a1de01633d55c, type: 3}
   Abajo_izquierda: {fileID: 21300000, guid: 4a86bb99c07718f41846a6ebac4792cc, type: 3}
@@ -334,7 +336,6 @@ MonoBehaviour:
   Abajo_derecha: {fileID: 21300000, guid: 27df8e3477f382240a42b80c8a2257c8, type: 3}
   Derecha: {fileID: 21300000, guid: 6225b60312c1c80489d539b11012158a, type: 3}
   Arriba_derecha: {fileID: 21300000, guid: 5bfae97d117cd7845902505879b7ae95, type: 3}
-  Colors: 0
 --- !u!1 &656335559
 GameObject:
   m_ObjectHideFlags: 0
@@ -440,9 +441,10 @@ GameObject:
   - component: {fileID: 659187097}
   - component: {fileID: 659187096}
   - component: {fileID: 659187095}
+  - component: {fileID: 659187098}
   m_Layer: 0
-  m_Name: Prueba (3)
-  m_TagString: Untagged
+  m_Name: "Ni\xF1a"
+  m_TagString: Objeto
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -459,7 +461,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa10900de9a27704384da7ef99d51df3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Frente: {fileID: 21300000, guid: 9218f7a9d07263445a37d957a4b50b85, type: 3}
+  Frente: {fileID: 21300000, guid: 08ace1e627a0b7d4a8caae64b714d1e7, type: 3}
+  Arriba: {fileID: 21300000, guid: 9218f7a9d07263445a37d957a4b50b85, type: 3}
   Arriba_izquierda: {fileID: 21300000, guid: b381246cc3580c04fb04d4ebdd5efcc5, type: 3}
   Izquierda: {fileID: 21300000, guid: 8de6cb662bd088d42b301c47a04b6145, type: 3}
   Abajo_izquierda: {fileID: 21300000, guid: 1363770be763d9e4e98743013e75fca2, type: 3}
@@ -467,7 +470,6 @@ MonoBehaviour:
   Abajo_derecha: {fileID: 21300000, guid: 7bc1b56c24a9f2c4ca625aca1e9bae26, type: 3}
   Derecha: {fileID: 21300000, guid: 767ff7cf648e1ae46869efb4b2b1a867, type: 3}
   Arriba_derecha: {fileID: 21300000, guid: a5f4085fd975a7d419acdd94aa70d4c2, type: 3}
-  Colors: 0
 --- !u!212 &659187096
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -535,6 +537,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &659187098
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 659187094}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.77, y: 3.15, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1934736543
 GameObject:
   m_ObjectHideFlags: 0
@@ -716,7 +731,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ae37eb4ed4e25984db9a734d86162846, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Frente: {fileID: 21300000, guid: ff8c2822e61cfac49ae3d3d19e513e53, type: 3}
+  Frente: {fileID: 21300000, guid: a53777aa3b35729428be40154add9690, type: 3}
+  Arriba: {fileID: 21300000, guid: ff8c2822e61cfac49ae3d3d19e513e53, type: 3}
   Arriba_izquierda: {fileID: 21300000, guid: abcb8c60815479741a3ba5c6b3b21b43, type: 3}
   Izquierda: {fileID: 21300000, guid: f4af299e7dc46274189e162a831381e9, type: 3}
   Abajo_izquierda: {fileID: 21300000, guid: ca94d515870d6b740b8d67e6766c483c, type: 3}
@@ -724,4 +740,3 @@ MonoBehaviour:
   Abajo_derecha: {fileID: 21300000, guid: b2ff4a1952e033f4895252ebd6248e21, type: 3}
   Derecha: {fileID: 21300000, guid: 6bef4adf1cb437a4d8d17677a8ca45e5, type: 3}
   Arriba_derecha: {fileID: 21300000, guid: 75df4caf3c86eb146982923246fb697e, type: 3}
-  Colors: 0

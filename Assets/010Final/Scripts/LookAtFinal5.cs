@@ -4,149 +4,122 @@ using UnityEngine;
 
 public class LookAtFinal5 : MonoBehaviour
 {
-    private SpriteRenderer rend; 
-    public Sprite Frente, Arriba_izquierda, Izquierda, Abajo_izquierda, Abajo, Abajo_derecha, Derecha, Arriba_derecha;
-    [SerializeField, Range(0, 8)] private float Colors = 0f;
+    
+    private SpriteRenderer rend;
+    //private BoxCollider2D Box;
+    //[SerializeField] GameObject Imagen;
+    public Sprite Frente, Arriba, Arriba_izquierda, Izquierda, Abajo_izquierda, Abajo, Abajo_derecha, Derecha, Arriba_derecha;
 
     private void Start()
     {
         rend = GetComponent<SpriteRenderer>();
         rend.sprite = Frente;
+        //Box = GetComponent<BoxCollider2D>();
+       // Objeto1 = GetComponent<GameObject>();
     }
 
     private void Update()
     {
+        //OnMouseEnter();
+        //Imagen.transform.position = new Vector2(Imagen.transform.position.x, Imagen.transform.position.y);
+        //Vector3 worldImagen = Camera.main.ScreenToWorldPoint(Imagen.transform.position);
+        
+
+        //OnMouseOver(Imagen);
         Vector3 mousePosition = GetWorldMousePosition();
+        
 
         float angle = Mathf.Atan2(mousePosition.y, mousePosition.x) - Mathf.PI / 2f;
         //RotateZ(angle);
         Debug.Log(angle);
 
-        //Frente
-        if (angle >= -0.300001 && angle <= 0.500001)
-        {
-            GetComponent<SpriteRenderer>().sprite = Frente;
-            Colors = 0f;
-        }
+        
+            //Arriba
+            if (angle >= -0.400001 && angle <= 0.50000)
+            {
+                GetComponent<SpriteRenderer>().sprite = Arriba;
 
-        //Diagonal superior izquierda
-        if (angle >= 0.500001 && angle <= 1.000001)
-        {
-            GetComponent<SpriteRenderer>().sprite = Arriba_izquierda;
-            Colors = 1f;
-        }
+            }
 
-        //Izquierda
-        if (angle >= 1.200001 && angle <= 1.500001)
-        {
-            GetComponent<SpriteRenderer>().sprite = Izquierda;
-            Colors = 2f;
-        }
+            //Diagonal superior izquierda
+            if (angle >= 0.500001 && angle <= 1.00001)
+            {
+                GetComponent<SpriteRenderer>().sprite = Arriba_izquierda;
 
-        //Diagonal inferior izquierda
-        if (angle >= -4.000001 && angle <= -3.00000)
-        {
-            GetComponent<SpriteRenderer>().sprite = Abajo_izquierda;
-            Colors = 3f;
-        }
+            }
 
-        //Abajo
-        if (angle >= -3.50000 && angle <= -2.700001)
-        {
-            GetComponent<SpriteRenderer>().sprite = Abajo;
-            Colors = 4f;
-        }
+            //Izquierda
+            if (angle >= 1.100001 && angle <= 1.500001)
+            {
+                GetComponent<SpriteRenderer>().sprite = Izquierda;
 
-        //Diagonal inferior derecha
-        if (angle >= -2.30000 && angle <= -2.050001)
-        {
-            GetComponent<SpriteRenderer>().sprite = Abajo_derecha;
-            Colors = 5f;
-        }
+            }
 
-        //Derecha
-        if (angle >= -1.80000 && angle <= -1.300001)
-        {
-            GetComponent<SpriteRenderer>().sprite = Derecha;
-            Colors = 6f;
-        }
+            //Diagonal inferior izquierda
+            if (angle >= -4.60000 && angle <= -3.90000)
+            {
+                GetComponent<SpriteRenderer>().sprite = Abajo_izquierda;
 
-        //Diagonal superior derecha
-        if (angle >= -1.05000 && angle <= -0.500001)
-        {
-            GetComponent<SpriteRenderer>().sprite = Arriba_derecha;
-            Colors = 7f;
-        }
+            }
 
-        //Frente
-        //if (Input.mousePosition.x >= 127.00 && Input.mousePosition.x <= 207.00) 
-        //{
-        //    Colors = 0f;
-        //}
+            //Abajo
+            if (angle >= -3.90001 && angle <= -2.30000)
+            {
+                GetComponent<SpriteRenderer>().sprite = Abajo;
 
-        //if (Input.mousePosition.y >= 220.00 && Input.mousePosition.y <= 265.00)
-        //{
-        //  Colors = 0f;
-        //}
+            }
 
-        //Abajo
+            //Diagonal inferior derecha
+            if (angle >= -2.30001 && angle <= -2.050001)
+            {
+                GetComponent<SpriteRenderer>().sprite = Abajo_derecha;
 
+            }
 
-        //Diagonal superior izquierda
-        //if (Input.mousePosition.x <= 127.00 && Input.mousePosition.x >= 40.00) 
-        //{
-        //  Colors = 1f;
-        //}
+            //Derecha
+            if (angle >= -1.80000 && angle <= -1.300001)
+            {
+                GetComponent<SpriteRenderer>().sprite = Derecha;
 
-        //if (Input.mousePosition.y <= 215.00 && Input.mousePosition.y >= 179.00)
-        //{
-        //  Colors = 1f;
-        //}
+            }
 
-        //Izquierda
-        //if (Input.mousePosition.x <= 40.00 && Input.mousePosition.x >= 26.00)
-        //{
-        //Colors = 2f;
-        //}
+            //Diagonal superior derecha
+            if (angle >= -1.300002 && angle <= -0.500001)
+            {
+                GetComponent<SpriteRenderer>().sprite = Arriba_derecha;
 
-        //Diagonal inferior izquierda
-        //if (Input.mousePosition.x <= 110.00 && Input.mousePosition.x >= 40.00)
-        //{
-        //Colors = 3f;
-        //}
+            }
 
-        //Diagonal superior derecha
-        //if (Input.mousePosition.x >= 207.00 && Input.mousePosition.x <= 260.00)
-        //{
-        //    Colors = 8f;
-        //}
+        
 
-        //if (Input.mousePosition.y <= 265.00 && Input.mousePosition.y <= 265.00)
-        //{
-        //  Colors = 0f;
-        //}
-
-        //
-
-        //Debug.Log(Input.mousePosition);
+        
     }
 
     private Vector4 GetWorldMousePosition()
     {
         Camera camera = Camera.main;
         Vector3 screenPos = new Vector3(Input.mousePosition.x, Input.mousePosition.y, 5);
+        
         Vector4 worldPos = Camera.main.ScreenToWorldPoint(screenPos);
         return worldPos;
     }
 
     //private void RotateZ(float radians)
     //{
-      //  transform.rotation = Quaternion.Euler(0.0f, 0.0f, radians * Mathf.Rad2Deg);
-        //Debug.Log(transform.rotation);
+    //  transform.rotation = Quaternion.Euler(0.0f, 0.0f, radians * Mathf.Rad2Deg);
+    //Debug.Log(transform.rotation);
     //}
 
-    private void ImageChange(float radians)
-    {
 
+    private void OnMouseEnter()
+    {
+        rend.sprite = Frente;
     }
+    //void OnMouseOver()
+    //{
+
+      //  rend.sprite = Frente;
+    //}
+
+
 }
