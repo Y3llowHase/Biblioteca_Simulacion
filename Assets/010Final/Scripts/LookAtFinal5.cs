@@ -31,7 +31,7 @@ public class LookAtFinal5 : MonoBehaviour
 
         float angle = Mathf.Atan2(mousePosition.y, mousePosition.x) - Mathf.PI / 2f;
         //RotateZ(angle);
-        Debug.Log(angle);
+        //Debug.Log(angle);
 
         
             //Arriba
@@ -89,10 +89,21 @@ public class LookAtFinal5 : MonoBehaviour
                 GetComponent<SpriteRenderer>().sprite = Arriba_derecha;
 
             }
+          
+        //if (Input.GetMouseButtonDown(0))
+        {
+            var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            var hits = Physics2D.GetRayIntersectionAll(ray, 1500f);
 
-        
+            foreach (var hit in hits)
+            {
+                print($"Mouse is over {hit.collider.name}");
+                GetComponent<SpriteRenderer>().sprite = Frente;
+            }
+        }
 
-        
+
+
     }
 
     private Vector4 GetWorldMousePosition()

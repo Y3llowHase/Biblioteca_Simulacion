@@ -7,12 +7,12 @@ public class LookAtFinal1 : MonoBehaviour
     private SpriteRenderer rend;
     private BoxCollider2D Box;
     [SerializeField] GameObject Imagen;
-    public Sprite Frente, Arriba, Arriba_izquierda, Izquierda, Abajo_izquierda, Abajo, Abajo_derecha, Derecha, Arriba_derecha;
+    public Sprite Frenteg, Arribag, Arriba_izquierdag, Izquierdag, Abajo_izquierdag, Abajog, Abajo_derechag, Derechag, Arriba_derechag;
 
     private void Start()
     {
         rend = GetComponent<SpriteRenderer>();
-        rend.sprite = Frente;
+        rend.sprite = Frenteg;
         Box = GetComponent<BoxCollider2D>();
         // Objeto1 = GetComponent<GameObject>();
     }
@@ -29,70 +29,77 @@ public class LookAtFinal1 : MonoBehaviour
 
         float angle = Mathf.Atan2(mousePosition.y, mousePosition.x) - Mathf.PI / 2f;
         //RotateZ(angle);
-        Debug.Log(angle);
+        //Debug.Log(angle);
 
 
 
-        if (mousePosition.x >= 0.2000 && mousePosition.x <= 0.1500)
-        {
-            GetComponent<SpriteRenderer>().sprite = Frente;
-        }
-        else
+       
+        
         {
             //Arriba
             if (angle >= -0.400001 && angle <= 0.50000)
             {
-                GetComponent<SpriteRenderer>().sprite = Arriba;
+                GetComponent<SpriteRenderer>().sprite = Arribag;
 
             }
 
             //Diagonal superior izquierda
             if (angle >= 0.500001 && angle <= 1.00001)
             {
-                GetComponent<SpriteRenderer>().sprite = Arriba_izquierda;
+                GetComponent<SpriteRenderer>().sprite = Arriba_izquierdag;
 
             }
 
             //Izquierda
             if (angle >= 1.100001 && angle <= 1.500001)
             {
-                GetComponent<SpriteRenderer>().sprite = Izquierda;
+                GetComponent<SpriteRenderer>().sprite = Izquierdag;
 
             }
 
             //Diagonal inferior izquierda
             if (angle >= -4.60000 && angle <= -3.90000)
             {
-                GetComponent<SpriteRenderer>().sprite = Abajo_izquierda;
+                GetComponent<SpriteRenderer>().sprite = Abajo_izquierdag;
 
             }
 
             //Abajo
             if (angle >= -3.90001 && angle <= -2.30000)
             {
-                GetComponent<SpriteRenderer>().sprite = Abajo;
+                GetComponent<SpriteRenderer>().sprite = Abajog;
 
             }
 
             //Diagonal inferior derecha
             if (angle >= -2.30001 && angle <= -2.050001)
             {
-                GetComponent<SpriteRenderer>().sprite = Abajo_derecha;
+                GetComponent<SpriteRenderer>().sprite = Abajo_derechag;
 
             }
 
             //Derecha
             if (angle >= -1.80000 && angle <= -1.300001)
             {
-                GetComponent<SpriteRenderer>().sprite = Derecha;
+                GetComponent<SpriteRenderer>().sprite = Derechag;
 
             }
 
             //Diagonal superior derecha
             if (angle >= -1.300002 && angle <= -0.500001)
             {
-                GetComponent<SpriteRenderer>().sprite = Arriba_derecha;
+                GetComponent<SpriteRenderer>().sprite = Arriba_derechag;
 
+            }
+            {
+                var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                var hits = Physics2D.GetRayIntersectionAll(ray, 1500f);
+
+                foreach (var hit in hits)
+                {
+                    print($"Mouse is over {hit.collider.name}");
+                    GetComponent<SpriteRenderer>().sprite = Frenteg;
+                }
             }
 
         }
