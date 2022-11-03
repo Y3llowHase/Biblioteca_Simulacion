@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LookAtFinal2 : MonoBehaviour
+public class Niño1 : MonoBehaviour
 {
     private SpriteRenderer rend;
-    public Sprite Frente, Arriba, Arriba_izquierda, Izquierda, Abajo_izquierda, Abajo, Abajo_derecha, Derecha, Arriba_derecha;
+    public Sprite Frente, Arriba, Arriba_izquierda, Izquierda, Abajo_izquierda, Abajo, Abajo_derecha, Derecha, Arriba_derecha, Características;
 
     private void Start()
     {
@@ -18,10 +18,7 @@ public class LookAtFinal2 : MonoBehaviour
         Vector3 mousePosition = GetWorldMousePosition();
 
         float angle = Mathf.Atan2(mousePosition.y, mousePosition.x) - Mathf.PI / 2f;
-        //RotateZ(angle);
-        Debug.Log(angle);
-
-        
+    
 
         //Arriba
         if (angle >= -0.300001 && angle <= 0.500001)
@@ -71,6 +68,22 @@ public class LookAtFinal2 : MonoBehaviour
             GetComponent<SpriteRenderer>().sprite = Arriba_derecha;
         }
 
+        //Frente
+        {
+            LayerMask mask = LayerMask.GetMask("Niño1");
+            var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            var hits = Physics2D.GetRayIntersectionAll(ray, 1500f, mask);
+
+            foreach (var hit in hits)
+            {
+                GetComponent<SpriteRenderer>().sprite = Frente;
+
+                    if (Input.GetMouseButton(0))
+                    {
+                        GetComponent<SpriteRenderer>().sprite = Características;
+                    }
+            }
+        }
 
     }
 
@@ -82,11 +95,7 @@ public class LookAtFinal2 : MonoBehaviour
         return worldPos;
     }
 
-    //private void RotateZ(float radians)
-    //{
-    //  transform.rotation = Quaternion.Euler(0.0f, 0.0f, radians * Mathf.Rad2Deg);
-    //Debug.Log(transform.rotation);
-    //}
+ 
 
     
 }

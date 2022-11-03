@@ -2,40 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LookAtFinal1 : MonoBehaviour
+public class Gato : MonoBehaviour
 {
     private SpriteRenderer rend;
-    private BoxCollider2D Box;
-    [SerializeField] GameObject Imagen;
-    public Sprite Frenteg, Arribag, Arriba_izquierdag, Izquierdag, Abajo_izquierdag, Abajog, Abajo_derechag, Derechag, Arriba_derechag;
+    public Sprite Frenteg, Arribag, Arriba_izquierdag, Izquierdag, Abajo_izquierdag, Abajog, Abajo_derechag, Derechag, Arriba_derechag, Características;
 
     private void Start()
     {
         rend = GetComponent<SpriteRenderer>();
         rend.sprite = Frenteg;
-        Box = GetComponent<BoxCollider2D>();
-        // Objeto1 = GetComponent<GameObject>();
+        
     }
 
     private void Update()
     {
-        //Imagen.transform.position = new Vector2(Imagen.transform.position.x, Imagen.transform.position.y);
-        //Vector3 worldImagen = Camera.main.ScreenToWorldPoint(Imagen.transform.position);
-
-
-        //OnMouseOver(Imagen);
+     
         Vector3 mousePosition = GetWorldMousePosition();
 
 
         float angle = Mathf.Atan2(mousePosition.y, mousePosition.x) - Mathf.PI / 2f;
-        //RotateZ(angle);
-        //Debug.Log(angle);
-
-
-
        
         
-        {
+        
             //Arriba
             if (angle >= -0.400001 && angle <= 0.50000)
             {
@@ -91,18 +79,24 @@ public class LookAtFinal1 : MonoBehaviour
                 GetComponent<SpriteRenderer>().sprite = Arriba_derechag;
 
             }
+
+            //Frente
             {
+                LayerMask mask = LayerMask.GetMask("Gato");
                 var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-                var hits = Physics2D.GetRayIntersectionAll(ray, 1500f);
+                var hits = Physics2D.GetRayIntersectionAll(ray, 1500f, mask);
 
                 foreach (var hit in hits)
                 {
-                    print($"Mouse is over {hit.collider.name}");
                     GetComponent<SpriteRenderer>().sprite = Frenteg;
+
+                    if (Input.GetMouseButton(0))
+                    {
+                     GetComponent<SpriteRenderer>().sprite = Características;
+                    }
                 }
             }
 
-        }
 
 
     }
@@ -116,17 +110,7 @@ public class LookAtFinal1 : MonoBehaviour
         return worldPos;
     }
 
-    //private void RotateZ(float radians)
-    //{
-    //  transform.rotation = Quaternion.Euler(0.0f, 0.0f, radians * Mathf.Rad2Deg);
-    //Debug.Log(transform.rotation);
-    //}
-
-    //void OnMouseOver()
-    //{
-
-    //  rend.sprite = Frente;
-    //}
+   
 
 
 }

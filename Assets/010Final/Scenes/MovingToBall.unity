@@ -135,8 +135,8 @@ GameObject:
   - component: {fileID: 92559437}
   - component: {fileID: 92559439}
   - component: {fileID: 92559440}
-  m_Layer: 0
-  m_Name: Prueba (2)
+  m_Layer: 6
+  m_Name: Gato
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -221,7 +221,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 257d6abf54ca75d4bbb9dc040a772503, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Imagen: {fileID: 0}
   Frenteg: {fileID: 21300000, guid: 677c932ca50973c4aa6bfd467b60b45f, type: 3}
   Arribag: {fileID: 21300000, guid: d0a74eb7351d3054c844a814b0ce6564, type: 3}
   Arriba_izquierdag: {fileID: 21300000, guid: 38254ea1307e00a41942e7b8f9ed7b67, type: 3}
@@ -231,6 +230,7 @@ MonoBehaviour:
   Abajo_derechag: {fileID: 21300000, guid: 019523eecc1f06d428603a4c9e360ffb, type: 3}
   Derechag: {fileID: 21300000, guid: d05f757747819ff499e94bf4ced4dee1, type: 3}
   Arriba_derechag: {fileID: 21300000, guid: a4579ffdacbbda745aeaa7f20d69f67e, type: 3}
+  "Caracter\xEDsticas": {fileID: 0}
 --- !u!61 &92559440
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -268,8 +268,9 @@ GameObject:
   - component: {fileID: 249402343}
   - component: {fileID: 249402342}
   - component: {fileID: 249402344}
-  m_Layer: 0
-  m_Name: Prueba (1)
+  - component: {fileID: 249402345}
+  m_Layer: 7
+  m_Name: "Ni\xF1o1"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -349,7 +350,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 249402340}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 75fd57ee7f7db0d43a6a826986411bc2, type: 3}
   m_Name: 
@@ -363,6 +364,33 @@ MonoBehaviour:
   Abajo_derecha: {fileID: 21300000, guid: 27df8e3477f382240a42b80c8a2257c8, type: 3}
   Derecha: {fileID: 21300000, guid: 6225b60312c1c80489d539b11012158a, type: 3}
   Arriba_derecha: {fileID: 21300000, guid: 5bfae97d117cd7845902505879b7ae95, type: 3}
+  "Caracter\xEDsticas": {fileID: 0}
+--- !u!61 &249402345
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 249402340}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.77, y: 3.15}
+    newSize: {x: 4.015625, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.77, y: 3.15}
+  m_EdgeRadius: 0
 --- !u!1 &656335559
 GameObject:
   m_ObjectHideFlags: 0
@@ -469,7 +497,7 @@ GameObject:
   - component: {fileID: 659187096}
   - component: {fileID: 659187095}
   - component: {fileID: 659187098}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: "Ni\xF1a"
   m_TagString: Objeto
   m_Icon: {fileID: 0}
@@ -497,6 +525,7 @@ MonoBehaviour:
   Abajo_derecha: {fileID: 21300000, guid: 7bc1b56c24a9f2c4ca625aca1e9bae26, type: 3}
   Derecha: {fileID: 21300000, guid: 767ff7cf648e1ae46869efb4b2b1a867, type: 3}
   Arriba_derecha: {fileID: 21300000, guid: a5f4085fd975a7d419acdd94aa70d4c2, type: 3}
+  "Caracter\xEDsticas": {fileID: 21300000, guid: 815f15421880340e1ac8fb4767057d51, type: 3}
 --- !u!212 &659187096
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -685,8 +714,9 @@ GameObject:
   - component: {fileID: 2055862023}
   - component: {fileID: 2055862021}
   - component: {fileID: 2055862025}
-  m_Layer: 0
-  m_Name: Prueba
+  - component: {fileID: 2055862026}
+  m_Layer: 8
+  m_Name: "Ni\xF1o2"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -766,7 +796,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2055862020}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ae37eb4ed4e25984db9a734d86162846, type: 3}
   m_Name: 
@@ -780,3 +810,30 @@ MonoBehaviour:
   Abajo_derecha: {fileID: 21300000, guid: b2ff4a1952e033f4895252ebd6248e21, type: 3}
   Derecha: {fileID: 21300000, guid: 6bef4adf1cb437a4d8d17677a8ca45e5, type: 3}
   Arriba_derecha: {fileID: 21300000, guid: 75df4caf3c86eb146982923246fb697e, type: 3}
+  "Caracter\xEDsticas": {fileID: 0}
+--- !u!61 &2055862026
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2055862020}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.77, y: 3.15}
+    newSize: {x: 4.015625, y: 2}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.77, y: 3.15}
+  m_EdgeRadius: 0
