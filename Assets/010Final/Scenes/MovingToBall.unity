@@ -230,7 +230,7 @@ MonoBehaviour:
   Abajo_derechag: {fileID: 21300000, guid: 019523eecc1f06d428603a4c9e360ffb, type: 3}
   Derechag: {fileID: 21300000, guid: d05f757747819ff499e94bf4ced4dee1, type: 3}
   Arriba_derechag: {fileID: 21300000, guid: a4579ffdacbbda745aeaa7f20d69f67e, type: 3}
-  "Caracter\xEDsticas": {fileID: 0}
+  "Caracter\xEDsticas": {fileID: 21300000, guid: 06aa8b53b8b08034e9d7e51411392c51, type: 3}
 --- !u!61 &92559440
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -364,7 +364,7 @@ MonoBehaviour:
   Abajo_derecha: {fileID: 21300000, guid: 27df8e3477f382240a42b80c8a2257c8, type: 3}
   Derecha: {fileID: 21300000, guid: 6225b60312c1c80489d539b11012158a, type: 3}
   Arriba_derecha: {fileID: 21300000, guid: 5bfae97d117cd7845902505879b7ae95, type: 3}
-  "Caracter\xEDsticas": {fileID: 0}
+  "Caracter\xEDsticas": {fileID: 21300000, guid: f4a6e7cd14d5401478f4676f80ba2b67, type: 3}
 --- !u!61 &249402345
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -525,7 +525,7 @@ MonoBehaviour:
   Abajo_derecha: {fileID: 21300000, guid: 7bc1b56c24a9f2c4ca625aca1e9bae26, type: 3}
   Derecha: {fileID: 21300000, guid: 767ff7cf648e1ae46869efb4b2b1a867, type: 3}
   Arriba_derecha: {fileID: 21300000, guid: a5f4085fd975a7d419acdd94aa70d4c2, type: 3}
-  "Caracter\xEDsticas": {fileID: 21300000, guid: 815f15421880340e1ac8fb4767057d51, type: 3}
+  "Caracter\xEDsticas": {fileID: 21300000, guid: 97a6ad15a80edc84cac57c9c02f4b3c7, type: 3}
 --- !u!212 &659187096
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -810,7 +810,7 @@ MonoBehaviour:
   Abajo_derecha: {fileID: 21300000, guid: b2ff4a1952e033f4895252ebd6248e21, type: 3}
   Derecha: {fileID: 21300000, guid: 6bef4adf1cb437a4d8d17677a8ca45e5, type: 3}
   Arriba_derecha: {fileID: 21300000, guid: 75df4caf3c86eb146982923246fb697e, type: 3}
-  "Caracter\xEDsticas": {fileID: 0}
+  "Caracter\xEDsticas": {fileID: 21300000, guid: 56b6fc8c350e2cd4eb9b0a06114c6c57, type: 3}
 --- !u!61 &2055862026
 BoxCollider2D:
   m_ObjectHideFlags: 0

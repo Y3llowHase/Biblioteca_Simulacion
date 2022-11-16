@@ -6,6 +6,7 @@ public class Gato : MonoBehaviour
 {
     private SpriteRenderer rend;
     public Sprite Frenteg, Arribag, Arriba_izquierdag, Izquierdag, Abajo_izquierdag, Abajog, Abajo_derechag, Derechag, Arriba_derechag, Características;
+    public int sortingOrder = 0;
 
     private void Start()
     {
@@ -93,6 +94,12 @@ public class Gato : MonoBehaviour
                     if (Input.GetMouseButton(0))
                     {
                      GetComponent<SpriteRenderer>().sprite = Características;
+                    rend.sortingOrder = 2;
+                    }
+                    if (Input.GetMouseButtonUp(0))
+                    {
+                   
+                    rend.sortingOrder = 0;
                     }
                 }
             }

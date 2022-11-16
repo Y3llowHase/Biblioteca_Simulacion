@@ -7,6 +7,7 @@ public class Niña : MonoBehaviour
     
     private SpriteRenderer rend;
     public Sprite Frente, Arriba, Arriba_izquierda, Izquierda, Abajo_izquierda, Abajo, Abajo_derecha, Derecha, Arriba_derecha, Características;
+    public int sortingOrder = 0;
 
     private void Start()
     {
@@ -93,10 +94,16 @@ public class Niña : MonoBehaviour
             {
                 GetComponent<SpriteRenderer>().sprite = Frente;
 
-                 if (Input.GetMouseButton(0))
-                 {
+                if (Input.GetMouseButton(0))
+                {
                     GetComponent<SpriteRenderer>().sprite = Características;
-                 }
+                    rend.sortingOrder = 2;
+                }
+                if (Input.GetMouseButtonUp(0))
+                {
+
+                    rend.sortingOrder = 0;
+                }
 
 
             }
