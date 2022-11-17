@@ -231,6 +231,7 @@ MonoBehaviour:
   Derechag: {fileID: 21300000, guid: d05f757747819ff499e94bf4ced4dee1, type: 3}
   Arriba_derechag: {fileID: 21300000, guid: a4579ffdacbbda745aeaa7f20d69f67e, type: 3}
   "Caracter\xEDsticas": {fileID: 21300000, guid: 06aa8b53b8b08034e9d7e51411392c51, type: 3}
+  sortingOrder: 0
 --- !u!61 &92559440
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -365,6 +366,7 @@ MonoBehaviour:
   Derecha: {fileID: 21300000, guid: 6225b60312c1c80489d539b11012158a, type: 3}
   Arriba_derecha: {fileID: 21300000, guid: 5bfae97d117cd7845902505879b7ae95, type: 3}
   "Caracter\xEDsticas": {fileID: 21300000, guid: f4a6e7cd14d5401478f4676f80ba2b67, type: 3}
+  sortingOrder: 0
 --- !u!61 &249402345
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -526,6 +528,7 @@ MonoBehaviour:
   Derecha: {fileID: 21300000, guid: 767ff7cf648e1ae46869efb4b2b1a867, type: 3}
   Arriba_derecha: {fileID: 21300000, guid: a5f4085fd975a7d419acdd94aa70d4c2, type: 3}
   "Caracter\xEDsticas": {fileID: 21300000, guid: 97a6ad15a80edc84cac57c9c02f4b3c7, type: 3}
+  sortingOrder: 0
 --- !u!212 &659187096
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -696,7 +699,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1934736543}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.18, z: -14.53}
+  m_LocalPosition: {x: 0, y: -2.23, z: -14.53}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -811,6 +814,7 @@ MonoBehaviour:
   Derecha: {fileID: 21300000, guid: 6bef4adf1cb437a4d8d17677a8ca45e5, type: 3}
   Arriba_derecha: {fileID: 21300000, guid: 75df4caf3c86eb146982923246fb697e, type: 3}
   "Caracter\xEDsticas": {fileID: 21300000, guid: 56b6fc8c350e2cd4eb9b0a06114c6c57, type: 3}
+  sortingOrder: 0
 --- !u!61 &2055862026
 BoxCollider2D:
   m_ObjectHideFlags: 0
